@@ -1,0 +1,27 @@
+extends layout
+
+
+block content
+  script
+    //mapit(45.528337, -122.677338, 3);
+
+  .mainBlock
+    div(style='margin-bottom:20px;')
+      h1.whiteTxt Interactive Balance LLC
+      p.whiteTxt Pretty Data is the WD-40 for your business
+
+    - var items = [];
+    - items.push({id:1, head:'E-Learning', sub:'Custom built Learning Management Systems'})
+    - items.push({id:2, head:'Design', sub:'Branding and Intuitive Design'})
+    - items.push({id:3, head:'About', sub:'Lots of proprietary stuff'})
+    - items.push({id:4, head:'Technology', sub:'What we use'})
+    - items.push({id:5, head:'Data', sub:'Pretty pretty data'})
+    - items.push({id:6, head:'Demo', sub:'Come over for some coffee and a quick overview'})
+
+
+
+    - each item, j in items
+      .linkThumb
+        img(src='/img/thumb#{j +1}.jpg')
+        h2 #{item.head}
+        p #{item.sub}
