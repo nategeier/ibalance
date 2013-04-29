@@ -7,18 +7,16 @@ block content
 
   .mainBlock
     div(style='margin-bottom:20px;')
-      h1.whiteTxt Interactive Balance LLC
-      p.whiteTxt Pretty Data is the WD-40 for your business
+      h1(style='margin-bottom:2px;').whiteTxt Interactive Balance
+      i.whiteTxt Pretty Data is the WD-40 for your business
 
     - var items = [];
-    - items.push({id:1, head:'E-Learning', sub:'Custom built Learning Management Systems', link:'/', targ:'_self'})
-    - items.push({id:2, head:'Design', sub:'Branding and Intuitive Design', link:'/', targ:'_self'})
+    - items.push({id:1, head:'E-Learning', sub:'Custom built Learning Management Systems', link:'/about', targ:'_self'})
+    - items.push({id:2, head:'Design', sub:'Branding and Intuitive Design', link:'/about', targ:'_self'})
     - items.push({id:3, head:'About', sub:'Lots of proprietary stuff', link:'/about', targ:'_self'})
     - items.push({id:4, head:'Technology', sub:'What we use', link:'/technology', targ:'_self'})
-    - items.push({id:5, head:'Data', sub:'Pretty pretty data', link:'/', targ:'_self'})
+    - items.push({id:5, head:'Data', sub:'Pretty pretty data', link:'/about', targ:'_self'})
     - items.push({id:6, head:'Demo', sub:'Come over for some coffee and a quick overview', link:'http://demo.shanegreen.com:8000/', targ:'_blank'})
-
-
 
     - each item, j in items
       a.linkThumb(id=item.id, href= item.link, target= item.targ)
