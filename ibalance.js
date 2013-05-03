@@ -63,7 +63,7 @@ app.configure('production', function(){
 */
 
 
-http.createServer(app).listen('/tmp/bmw_node.socket', function(){
+http.createServer(app).listen('/tmp/ibalance_node.socket', function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
