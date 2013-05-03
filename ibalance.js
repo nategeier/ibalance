@@ -8,7 +8,7 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , oldUmask = process.umask(777);
+  , oldUmask = process.umask(0000);
 
 var app = express();
 
