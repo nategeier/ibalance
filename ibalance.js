@@ -64,7 +64,7 @@ app.configure('production', function(){
 */
 
 
-http.createServer(app).listen('7070', function(){
+http.createServer(app).listen('80', function(){
 	process.umask(oldUmask);
   console.log('Express server listening on port ' + app.get('port'));
 });
