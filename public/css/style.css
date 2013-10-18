@@ -6,13 +6,15 @@ body {
   color: #005189;
 }
 a {
-  color: #005189;
+  color: #95aec0;
 }
 header a {
   text-decoration: none;
 }
-h1 {
+h1,
+h2 {
   font-family: 'Raleway', sans-serif;
+  color: #005189;
 }
 h2 {
   margin: 2px;
@@ -32,9 +34,8 @@ nav ul {
 }
 nav ul li {
   float: left;
-  margin-right: 20px;
   background-color: rgba(255,255,255,0.8);
-  padding: 10px;
+  padding: 7px;
   padding-right: 20px;
   padding-left: 20px;
   height: 100%;
@@ -53,6 +54,10 @@ nav ul a {
 }
 a.linkThumb {
   text-decoration: none;
+}
+.mainHead h1,
+.mainHead p {
+  text-align: center;
 }
 #map-canvas {
   position: absolute;
@@ -102,13 +107,17 @@ footer ul li {
 .whiteTxt {
   color: #fff;
 }
-.linkThumb {
-  width: 32%;
-  min-width: 200px;
+.no-pad {
+  padding: 0px;
+}
+.padding-small {
+  padding: 2px;
+}
+.margin-bull {
+  margin-left: 40px;
+}
+.colBox {
   height: 240px;
-  float: left;
-  margin-right: 5px;
-  margin-bottom: 5px;
   background-color: rgba(255,255,255,0.9);
   padding: 2px;
 }
@@ -128,7 +137,6 @@ footer ul li {
   width: 55%;
 }
 .widePost {
-  width: 95%;
   background-color: rgba(255,255,255,0.9);
   padding: 20px;
   margin-bottom: 2px;

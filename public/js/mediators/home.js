@@ -22,23 +22,23 @@ $(document).ready(function() {
 
 
   var dNum = .3;
-  for(i = 0; i < $('.linkThumb').length; i ++){
-    var mc = $('.linkThumb')[i]
+  for(i = 0; i < $('a').length; i ++){
+    var mc = $('a')[i]
     TweenLite.from(mc, .3, {delay:dNum, css:{opacity:0, y:20}});
     dNum += .2;
     $(mc).mouseover(clickObj);
     $(mc).mouseout(outObj);
   }
-  
+
   function clickObj(e){
     var id = e.currentTarget.id;
    
 
     for(i = 0; i < $('.linkThumb').length; i ++){
       if(id == i + 1){
-        TweenLite.to($('.linkThumb')[i], .3, {css:{opacity:1, scaleX:1.05, scaleY:1.05}});
+        TweenLite.to($('.linkThumb')[i], .3, {css:{opacity:1, scaleX:1.01, scaleY:1.01}});
       }else{
-        TweenLite.to($('.linkThumb')[i], .3, {css:{opacity:.8, scaleX:.96, scaleY:.96}});
+        TweenLite.to($('.linkThumb')[i], .3, {css:{opacity:.8, scaleX:1, scaleY:1}});
       }
     }
 

@@ -2,13 +2,10 @@ extends layout
 
 
 block content
-  script
-    //mapit(45.528337, -122.677338, 3);
-
-  .mainBlock
-    div(style='margin-bottom:20px;')
+  .large-12
+    .mainHead.large-12.columns(style='margin-bottom:20px;')
       h1(style='margin-bottom:2px;').whiteTxt Interactive Balance
-      i.whiteTxt Pretty Data is the WD-40 for your business
+      p.whiteTxt Pretty Data is the WD-40 for your business
 
     - var items = [];
     - items.push({id:1, head:'E-Learning', sub:'Custom built Learning Management Systems', link:'/about', targ:'_self'})
@@ -17,9 +14,13 @@ block content
     - items.push({id:4, head:'Technology', sub:'What we use', link:'/technology', targ:'_self'})
     - items.push({id:5, head:'Data', sub:'Pretty pretty data', link:'/about', targ:'_self'})
     - items.push({id:6, head:'Websites', sub:'General consumer website builds', link:'http://208.109.126.164:8002/', targ:'_self'})
-
-    - each item, j in items
-      a.linkThumb(id=item.id, href= item.link, target= item.targ)
-        img(src='/img/thumb#{j +1}.jpg')
-        h2 #{item.head}
-        p #{item.sub}
+    .row
+      - each item, j in items
+        .linkThumb
+          .large-4.columns.no-pad.small-6
+            .padding-small
+              .colBox
+                a(id=item.id, href= item.link, target= item.targ)
+                  img(src='/img/thumb#{j +1}.jpg')
+                  h2 #{item.head}
+                  p #{item.sub}

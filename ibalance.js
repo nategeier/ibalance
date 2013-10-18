@@ -7,13 +7,12 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path')
-  , oldUmask = process.umask(0000);
+  , path = require('path');
 
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon(__dirname + '/public/img/favicon.ico', { maxAge: 2592000000 }));
@@ -41,32 +40,7 @@ app.get('/coworking', routes.coworking);
 
 
 app.get('/users', user.list);
-/*
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
-
-
-
-app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
-	app.listen(8081, function() {
-	  process.umask(oldUmask);
-	});
-});
-
-app.configure('production', function(){
-  app.use(express.errorHandler()); 
-	app.listen('/tmp/bmw_node.socket', function() {
-	  process.umask(oldUmask);
-	});
-});
-*/
-
-
-http.createServer(app).listen('7070', function(){
-	process.umask(oldUmask);
-  console.log('Express server listening on port ' + app.get('port'));
-});
-
-
