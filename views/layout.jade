@@ -13,24 +13,30 @@ html
     script(type="text/javascript", src="/js/com/greensock/TweenLite.min.js")
     script(type='text/javascript', src='/js/mediators/home.js')
     script(type='text/javascript', src='/js/mediators/tracking.js')
-
+    meta(meta name="viewport", content="width=device-width, initial-scale=1.0")
 
   body
     header
-      nav
-        ul
-          a(href='/about')
-            li About
-          a(href='/technology')
-            li Technology
-          a(href='/jobs')
-            li Jobs
-          a(href='/coworking')
-            li CoWorking
-          a(href='/contact')
-            li Contact
-      a(href='/', style='float:right;padding:5px;')
-        h2.whiteTxt Interactive Balance, LLC
+      .row
+        .large-8.columns
+          nav
+            ul
+              a(href='/about')
+                li About
+              a(href='/technology')
+                li Technology
+              a(href='/jobs')
+                li Jobs
+              a(href='/coworking')
+                li CoWorking
+              a(href='/contact')
+                li Contact
+        .large-4.columns
+          a(href='/', style='width:100%;padding:5px;')
+            .logo
+              img.left(width='43', height='43', style='padding-right:10px;padding-bottom:10px;', src='/img/logo.png')
+              h2 Interactive Balance
+
     #map-canvas
 
     block content
