@@ -2,8 +2,11 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/vendors/foundation/css/foundation.min.css')
+    //link(rel='stylesheet', href='/vendors/foundation/css/foundation.min.css')
+    link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/main.css')
+    
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway')
     script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD8mU_RaqmtXFHbDcgIBRs03IlnS781YJE&sensor=true')
     script(type='text/javascript', src='/js/jquery/jquery.js')
@@ -14,25 +17,38 @@ html
     script(type='text/javascript', src='/js/mediators/home.js')
     script(type='text/javascript', src='/js/mediators/tracking.js')
     meta(meta name="viewport", content="width=device-width, initial-scale=1.0")
+    script(type="text/javascript", src="/vendors/foundation/js/vendor/custom.modernizr.js")
+    script(type="text/javascript", src="/vendors/foundation/js/foundation.min.js")
+    
+
 
   body
     header
-      .row
-        .large-7.columns
-          nav.right
-            ul
-              a(href='/about')
-                li About
-              a(href='/technology')
-                li Technology
-              a(href='/coworking')
-                li CoWorking
-              a(href='/contact')
-                li Contact
-        .large-5.columns
-          a.logo(href='/')
-            img.left(width='43', height='43', style='padding-top:15px;padding-right:10px;padding-bottom:10px;', src='/img/logo.png')
-            h2 Interactive Balance
+      nav.top-bar
+        ul.title-area
+          // Title Area
+          li.name(style='width:300px')
+            a(href='/')
+              img.left(src='/img/logo.png')
+              h1 Interactive Balance
+          // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+          li.toggle-topbar.menu-icon
+            a(href='/about')
+              span about
+        section.top-bar-section
+          // Left Nav Section
+          ul.right
+            li.divider
+            li.active
+              a(href='/about') About
+            li.divider
+            li
+              a(href='/technology') Technology
+            li.divider
+            li
+              a(href='/contact') Contact
+
+                
 
     #map-canvas
 
@@ -49,6 +65,10 @@ html
     footer
       ul
         li <a href="tel:+5033957912">(503) 395.7912</a> <a href="mailto:info@interactivebalance.com">info@interactivebalance.com</a> &copy; Interactive Balance, LLC 2009
+
+  script
+    document.write('<script src=/js/jquery/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>');
+    $(document).foundation();
 
 
 

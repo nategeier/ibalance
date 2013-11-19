@@ -2626,7 +2626,7 @@ form.custom {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111;
+  background: rgba(255,255,255,.8);
   margin-bottom: 1.875em; }
   .top-bar ul {
     margin-bottom: 0;

@@ -22,6 +22,7 @@ $(document).ready(function() {
 
 
   var dNum = .3;
+  /*
   for(i = 0; i < $('a').length; i ++){
     var mc = $('a')[i]
     TweenLite.from(mc, .3, {delay:dNum, css:{opacity:0, y:20}});
@@ -29,7 +30,7 @@ $(document).ready(function() {
     $(mc).mouseover(clickObj);
     $(mc).mouseout(outObj);
   }
-
+  */
   function clickObj(e){
     var id = e.currentTarget.id;
    

@@ -1,0 +1,162 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-image: url("/img/bkd.png");
+  color: #005189;
+}
+a {
+  color: #95aec0;
+}
+header a {
+  text-decoration: none;
+}
+.colBox,
+.widePost {
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.colBox img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #005189;
+}
+h2 {
+  margin: 2px;
+  font-size: 20px;
+}
+p {
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+large {
+  font-size: 33px;
+}
+nav ul,
+nav ul li,
+nav ul li:hover,
+nav ul a,
+/*
+.top-bar
+  background-color:rgba(255,255,255,.5)
+
+.name
+  width:400px
+  padding:4px
+
+.name img
+  padding:10px
+
+nav.top-bar
+  height:100px
+
+ul.title-area, .top-bar-section
+  height:60px
+*/,
+a.linkThumb {
+  text-decoration: none;
+}
+.logo {
+  padding: 10px;
+  margin: 0;
+}
+.mainHead h1,
+.mainHead p {
+  text-align: center;
+}
+#map-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header {
+  margin: 0;
+}
+footer {
+  background-color: rgba(255,255,255,0.3);
+  padding-top: 0px;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: #005189;
+  position: fixed;
+  bottom: 0;
+}
+footer a,
+footer ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  width: 500px;
+  margin: 0 auto;
+}
+footer ul li {
+  float: left;
+  text-align: center;
+}
+.mainBlock {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1024px;
+  padding: 0;
+}
+.whiteTxt {
+  color: #fff;
+}
+.no-pad {
+  padding: 0px;
+}
+.padding-small {
+  padding: 2px;
+}
+.margin-bull {
+  margin-left: 40px;
+}
+.colBox {
+  height: 240px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 2px;
+}
+.linkThumb img {
+  width: 100%;
+  background-color: rgba(255,255,255,0.4);
+}
+.clear {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.mainContext {
+  width: 55%;
+}
+.widePost {
+  background-color: rgba(255,255,255,0.9);
+  padding: 20px;
+  margin-bottom: 2px;
+}
+.widePost .left {
+  float: left;
+  width: 62%;
+  padding-right: 10px;
+}
+.widePost .right {
+  width: 35%;
+  float: right;
+}
+.right img {
+  width: 100%;
+}

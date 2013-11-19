@@ -7,6 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
+  , sass = require('node-sass')
   , path = require('path');
 
 var app = express();
@@ -15,6 +16,13 @@ var app = express();
 app.set('port', process.env.PORT || 7070);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
+app.use(
+   sass.middleware({
+     src: __dirname + '/public', //where the sass files are 
+     dest: __dirname + '/public', //where css should go
+     debug: true // obvious
+   })
+ );
 app.use(express.favicon(__dirname + '/public/img/favicon.ico', { maxAge: 2592000000 }));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
@@ -23,6 +31,9 @@ app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
 app.use(require('stylus').middleware(__dirname + '/public'));
+
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
