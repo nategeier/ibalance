@@ -23,7 +23,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -2212,7 +2212,7 @@ label.error {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #50889f; }
+  background: white; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -2240,7 +2240,7 @@ label.error {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #50889f;
+  background: white;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -2268,7 +2268,7 @@ label.error {
       margin: 0; }
       .top-bar .name h1 a {
         font-weight: bold;
-        color: white;
+        color: #386b86;
         width: 50%;
         display: block;
         padding: 0 15px; }
@@ -2277,7 +2277,7 @@ label.error {
     right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
-      color: white;
+      color: #386b86;
       text-transform: uppercase;
       font-size: 0.8125em;
       font-weight: bold;
@@ -2297,20 +2297,20 @@ label.error {
         height: 34px;
         line-height: 33px;
         padding: 0;
-        color: white; }
+        color: #386b86; }
         .top-bar .toggle-topbar.menu-icon a span {
           position: absolute;
           right: 0;
           display: block;
           width: 16px;
           height: 0;
-          -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-          box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
+          -webkit-box-shadow: 0 10px 0 1px #386b86, 0 16px 0 1px #386b86, 0 22px 0 1px #386b86;
+          box-shadow: 0 10px 0 1px #386b86, 0 16px 0 1px #386b86, 0 22px 0 1px #386b86; }
   .top-bar.expanded {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #50889f; }
+      background: white; }
     .top-bar.expanded .toggle-topbar a {
       color: #386b86; }
       .top-bar.expanded .toggle-topbar a span {
@@ -2328,24 +2328,24 @@ label.error {
     width: 100%;
     height: auto;
     display: block;
-    background: #222222;
+    background: #386b86;
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider, .top-bar-section [role="separator"] {
-    border-bottom: solid 1px #6da1b5;
-    border-top: solid 1px #3f6b7d;
+    border-bottom: solid 1px white;
+    border-top: solid 1px #e6e6e6;
     clear: both;
     height: 1px;
     width: 100%; }
   .top-bar-section ul li > a {
     display: block;
     width: 100%;
-    color: white;
+    color: #386b86;
     padding: 12px 0 12px 0;
     padding-left: 15px;
     font-size: 0.8125em;
     font-weight: bold;
-    background: #222222; }
+    background: #386b86; }
     .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em;
@@ -2366,10 +2366,10 @@ label.error {
       .top-bar-section ul li > a.button.alert:hover {
         background: #970b10; }
   .top-bar-section ul li:hover > a {
-    background: black;
+    background: #50889f;
     color: white; }
   .top-bar-section ul li.active > a {
-    background: #4b8095;
+    background: #386b86;
     color: white; }
   .top-bar-section .has-form {
     padding: 15px; }
@@ -2381,7 +2381,7 @@ label.error {
       width: 0;
       height: 0;
       border: inset 5px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+      border-color: transparent transparent transparent rgba(56, 107, 134, 0.5);
       border-left-style: solid;
       margin-right: 15px;
       margin-top: -4.5px;
@@ -2409,14 +2409,14 @@ label.error {
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0; }
         .top-bar-section .dropdown li.title h5 a {
-          color: white;
+          color: #386b86;
           line-height: 22.5px;
           display: block; }
     .top-bar-section .dropdown label {
       padding: 8px 15px 2px;
       margin-bottom: 0;
       text-transform: uppercase;
-      color: #555555;
+      color: #386b86;
       font-weight: bold;
       font-size: 0.625em; }
 
@@ -2429,7 +2429,7 @@ label.error {
 
 @media only screen and (min-width: 940px) {
   .top-bar {
-    background: #50889f;
+    background: white;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -2451,7 +2451,7 @@ label.error {
       position: relative;
       top: 8px; }
     .top-bar.expanded {
-      background: #50889f; }
+      background: white; }
   .contain-to-grid .top-bar {
     max-width: 62.5em;
     margin: 0 auto;
@@ -2470,14 +2470,14 @@ label.error {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: black;
+      background: #50889f;
       color: white; }
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #50889f; }
+      background: white; }
       .top-bar-section li a:not(.button):hover {
-        background: black; }
+        background: #50889f; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -2486,7 +2486,7 @@ label.error {
         width: 0;
         height: 0;
         border: inset 5px;
-        border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+        border-color: rgba(56, 107, 134, 0.5) transparent transparent transparent;
         border-top-style: solid;
         margin-top: -2.5px;
         top: 22.5px; }
@@ -2512,23 +2512,23 @@ label.error {
         line-height: 1;
         white-space: nowrap;
         padding: 7px 15px;
-        background: #5c96ad; }
+        background: #407a98; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #5c96ad; }
+        background: #386b86; }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
     .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
       border-bottom: none;
       border-top: none;
-      border-right: solid 1px #6da1b5;
-      border-left: solid 1px #3f6b7d;
+      border-right: solid 1px white;
+      border-left: solid 1px #e6e6e6;
       clear: none;
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #50889f;
+      background: white;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section ul.right li .dropdown {
@@ -2537,10 +2537,10 @@ label.error {
       .top-bar-section ul.right li .dropdown li .dropdown {
         right: 100%; }
   .no-js .top-bar-section ul li:hover > a {
-    background: black;
+    background: #50889f;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: #4b8095;
+    background: #386b86;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block; } }

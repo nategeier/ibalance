@@ -3,11 +3,12 @@ html
   head
     title= title
     //link(rel='stylesheet', href='/vendors/foundation/css/foundation.min.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway')
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='/css/main.css')
     
-    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway')
+    
     script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyD8mU_RaqmtXFHbDcgIBRs03IlnS781YJE&sensor=true')
     script(type='text/javascript', src='/js/jquery/jquery.js')
     
@@ -18,8 +19,8 @@ html
     script(type='text/javascript', src='/js/mediators/tracking.js')
     meta(meta name="viewport", content="width=device-width, initial-scale=1.0")
     script(type="text/javascript", src="/vendors/foundation/js/vendor/custom.modernizr.js")
-    script(type="text/javascript", src="/vendors/foundation/js/foundation.min.js")
-    
+    script(type="text/javascript", src="/vendors/foundation/js/foundation/foundation.js")
+    script(type="text/javascript", src="/vendors/foundation/js/foundation/foundation.topbar.js")
 
 
   body
@@ -29,7 +30,7 @@ html
           // Title Area
           li.name(style='width:300px')
             a(href='/')
-              img.left(src='/img/logo.png')
+              img.left(src='/img/logo_large.png', width='43')
               h1 Interactive Balance
           // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
           li.toggle-topbar.menu-icon
@@ -39,16 +40,16 @@ html
           // Left Nav Section
           ul.right
             li.divider
-            li.active
+            li(class=(title === 'About' ? 'active' : ''))
               a(href='/about') About
             li.divider
-            li
+            li(class=(title === 'Technology' ? 'active' : ''))
               a(href='/technology') Technology
             li.divider
-            li
+            li(class=(title === 'Coworking' ? 'active' : ''))
               a(href='/coworking') Coworking
             li.divider
-            li
+            li(class=(title === 'Contact' ? 'active' : ''))
               a(href='/contact') Contact
 
                 

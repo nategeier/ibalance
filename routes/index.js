@@ -26,5 +26,5 @@ exports.jobs = function(req, res){
 
 
 exports.coworking = function(req, res){
-  res.render('coworking', { title: 'coworking' });
+  res.render('coworking', { title: 'Coworking' });
 };
