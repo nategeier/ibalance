@@ -2,13 +2,16 @@ extends layout
 
 block content
   
-  script(type='text/javascript', src='/js/mediators/home.js')
-  script
-    mapit(45.528337, -122.677338, 8);
+  .about-img
+    .main-img-txt
+      .large-5.small-4.columns
+        img(src='/img/logo_large_white.png')
+      .large-7.small-8.columns
+        h1(style='margin-bottom:2px;').whiteTxt About
+        p.whiteTxt Located in Portland, Oregon since 2009
 
   .mainBlock
     .mainContext(style='margin-bottom:20px;')
-      h1.whiteTxt About
       .whiteTxt
         p Located in Portland, Oregon since 2009, <i>Interactive Balance</i> has been building custom online training software to large scale corporations worldwide. We changed the way HR does business by creating a system allowing delegation from corporate to regions to properties, instead of a single HR unit managing hundreds of thousands of records.  Everyone is responsible for their own department.
         p <large>99%</large> of our work is proprietary so we can't show any of it on the open web, but please set up a demo any time and we'll run you through the applications.

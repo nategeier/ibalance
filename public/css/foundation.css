@@ -851,8 +851,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -2328,7 +2328,7 @@ label.error {
     width: 100%;
     height: auto;
     display: block;
-    background: #386b86;
+    background: white;
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider, .top-bar-section [role="separator"] {
@@ -2345,7 +2345,7 @@ label.error {
     padding-left: 15px;
     font-size: 0.8125em;
     font-weight: bold;
-    background: #386b86; }
+    background: white; }
     .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em;
@@ -2515,7 +2515,7 @@ label.error {
         background: #407a98; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #386b86; }
+        background: #eeeeee; }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }

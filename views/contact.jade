@@ -3,28 +3,43 @@ extends layout
 block content
 
 
+  .cont-img
+    .main-img-txt
+      .large-5.small-4.columns
+        img(src='/img/logo_large_white.png')
+      .large-7.small-8.columns
+        h1(style='margin-bottom:2px;').whiteTxt Interactive Balance
+        p.whiteTxt Union Train Station<br>800 NW 6th Ave Suite 201 <br>Portland, OR 97212
 
-  .large-11.columns.large-centered.centerTxt
-    div(style='height:20px;')
-
-    .large-7.columns
-      
-      .widePost
-        .row
-          .large-5.columns
-            img(src='/img/logo_large.png')
-          .large-7.columns
-            h2 Interactive Balance, llc
-            p Union Train Station<br>800 NW 6th Ave Suite 201 <br>Portland, OR 97212
-    .large-5.columns
-      .widePost
-        a(href='mailto:info@interactivebalance.com') info@interactivebalance.com
-      .widePost
-        a(href='https://plus.google.com/100896801993734452685') Google +
-      .widePost
-        a(href='http://linkedin.com/in/nategeier') linkedin.com/in/nategeier
-      .widePost
-        a(href='https://twitter.com/nategeier', target='_blank') twitter @nategeier
-      .widePost
-        a(href="tel:+5033957912") (503) 395-7912
+  .row
+    .links
+      .large-6.columns
+        a(href='mailto:info@interactivebalance.com')
+          .widePost 
+            h5 info@interactivebalance.com
+      .large-6.columns
+        a(href='https://plus.google.com/+NateGeier')
+          .widePost 
+            h5 Google +
+      .large-6.columns
+        a(href='http://linkedin.com/in/nategeier')
+          .widePost 
+            h5 linkedin.com/in/nategeier
+      .large-6.columns
+        a(href='https://twitter.com/nategeier')
+          .widePost 
+            h5 twitter @nategeier
+      .large-12.columns
+        a(href='href="tel:+5033957912"')
+          .widePost 
+            h5 (503) 395-7912
+      //  
+        .clear
+        a.widePost(href='https://plus.google.com/100896801993734452685') Google +
+        .clear
+        a.widePost(href='http://linkedin.com/in/nategeier') linkedin.com/in/nategeier
+        .clear
+        a.widePost(href='https://twitter.com/nategeier', target='_blank') twitter @nategeier
+        .clear
+        a.widePost(href="tel:+5033957912") (503) 395-7912
    
