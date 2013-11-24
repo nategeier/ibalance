@@ -111,26 +111,21 @@ header {
   margin: 0;
 }
 footer {
-  background-color: rgba(255,255,255,0.3);
+  background-color: #fff;
   padding-top: 0px;
-  width: 100%;
-  height: 20px;
   margin-top: 10px;
-  text-align: center;
   color: #005189;
-  position: fixed;
-  bottom: 0;
+  height: 200px;
+  margin-top: 80px;
 }
-footer a,
 footer ul li {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin: 20px;
+  margin-bottom: 0px;
 }
 footer ul {
   list-style-type: none;
   padding: 0;
-  width: 500px;
-  margin: 0 auto;
 }
 footer ul li {
   float: left;
@@ -155,9 +150,9 @@ footer ul li {
   margin-left: 40px;
 }
 .colBox {
-  height: 240px;
   background-color: rgba(255,255,255,0.9);
   padding: 2px;
+  text-align: center;
 }
 .linkThumb img {
   width: 100%;
@@ -190,4 +185,8 @@ footer ul li {
 }
 .right img {
   width: 100%;
+}
+.headerTxt {
+  padding: 40px;
+  text-align: left;
 }
